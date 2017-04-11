@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+<div class="col-md-12">
+<p>
+  <strong>Inid:</strong>
+  <%= @product.inid %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @product.sku %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Qt:</strong>
+  <%= @product.qt %>
+</p>
+
+<p>
+  <strong>Cost price:</strong>
+  <%= @product.cost_price %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+</div>
+
+<div class="col-md-10" style="margin-top:20px;">
+Варианты	
+<table class="table table-hover">
+  <tr style="background:#e7e7e7;">
+	<th>sku</th>
+	<th>quantity</th>
+	<th>cost_price</th>
+	<th>price</th>
+	<th>Цвет</th>
+	<th>weight</th>
+	<th>Поставщик</th>
+	<th>ID поставщика</th>
+  </tr>
+  <tr>
+	<% @product.variants.each do |pv|%>
+	<td><%=pv.sku %></td>
+	<td><%=pv.quantity  %></td>
+	<td><%=pv.cost_price %></td>
+	<td><%=pv.price %></td>
+	<td><%=pv.opt_title %></td>
+	<td><%=pv.weight %></td>
+	<td><%=pv.supplier%></td>
+	<td><%=pv.supplier_id %></td>
+  </tr>
+  	<%end%>
+</table>
+</div>
+
+<div class="col-md-12" style="margin-top:20px;">
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+</div>

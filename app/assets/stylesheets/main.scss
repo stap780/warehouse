@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -60px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.content {
+  padding-top: 50px;
+padding-bottom: 50px;
+}
+.footer, .page-wrap:after {
+  height: 60px; 
+}
+.footer {
+	border-top:1px solid #e7e7e7;
+// 	border-color: #e7e7e7;
+	background-color: #f8f8f8;
+}

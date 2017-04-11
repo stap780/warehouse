@@ -1,0 +1,11 @@
+<tr>
+<td><%= f.input :sku, label: false %></td>
+<td><%= f.input :quantity, label: false  %></td>
+<td><%= f.input :cost_price, label: false %></td>
+<td><%= f.input :price,label: false %></td>
+<td><%= f.input :opt_title, label: false %></td>
+<td><%= f.input :weight, label: false %></td>
+<td><%= f.input :supplier, collection: ['Поставщик 1' , 'Поставщик 2'], label: false %></td>
+<td><%= f.input :supplier_id, label: false %></td>
+<td><%= f.check_box :_destroy %></td>
+</tr>

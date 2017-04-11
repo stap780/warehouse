@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Variant inid:</strong>
+  <%= @variant.variant_inid %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @variant.sku %>
+</p>
+
+<p>
+  <strong>Cost price:</strong>
+  <%= @variant.cost_price %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @variant.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @variant.quantity %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @variant.weight %>
+</p>
+
+<p>
+  <strong>Opt title:</strong>
+  <%= @variant.opt_title %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @variant.product_id %>
+</p>
+
+<p>
+  <strong>Supplier:</strong>
+  <%= @variant.supplier_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_variant_path(@variant) %> |
+<%= link_to 'Back', variants_path %>

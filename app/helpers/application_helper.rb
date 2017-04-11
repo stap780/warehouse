@@ -19,6 +19,6 @@ module ApplicationHelper
   end
 
   def app_name
-    'Мое приложение'
+    'Warehouse - управление товарами'
   end
 end

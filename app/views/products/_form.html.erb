@@ -1,0 +1,50 @@
+<%= simple_form_for(@product) do |f| %>
+  <%= f.error_notification %>
+<div class="col-md-12">
+		<div class="col-md-6">
+		  <div class="form-inputs">
+		    <%= f.input :inid %>
+		    <%= f.input :sku %>
+		    <%= f.input :title %>
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="form-inputs">
+		    <%= f.input :qt %>
+		    <%= f.input :cost_price %>
+		    <%= f.input :price %>
+		  </div>
+		</div>
+</div> 
+<div class="col-md-12" style="margin-top:20px;" >
+		<table class="table table-hover" id="variants">
+		<thead>
+			<tr>
+			<th>sku</th>
+			<th>Кол-во</th>
+			<th>cost_price</th>
+			<th>price</th>
+			<th>Цвет</th>
+			<th>Вес</th>
+			<th>Поставщик</th>
+			<th>ID поставщика</th>
+			<th>Удалить</th>
+			</tr>
+		</thead>
+		<%= f.simple_fields_for :variants do |variant| %>
+		<%= render 'variant_fields', :f => variant %>
+		<% end %>
+		</table>
+		</div>
+<div class="col-md-12">
+  <div class="form-actions">
+    <%= f.button :submit %>
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>
+  </div>
+</div>
+  
+  
+  
+  
+<% end %>

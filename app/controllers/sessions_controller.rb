@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
   def show
     render :action => :new
   end
-
+  
+  
   def create
     @shop = params[:shop]
 

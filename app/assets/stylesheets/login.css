@@ -1,5 +1,6 @@
 /* [Login Style Sheet] */
 
+/*
 body {font:12pt sans-serif}
 .body {width:100%;text-align:center}
 
@@ -18,6 +19,7 @@ body {font:12pt sans-serif}
 .main form p label {text-align:center;width:100%;margin-right:10px}
 input.button {font-size:110%;}
 /* Errors & Messages */
+/*
 .error {
     border: 2px solid;
     margin-bottom: 20px;
@@ -34,3 +36,5 @@ input.button {font-size:110%;}
     background: url(/assets/success.png) no-repeat 10px 9px #c5fca3;
     border-color: #62cf21;
 }
+*/
+

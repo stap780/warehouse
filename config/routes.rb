@@ -1,5 +1,11 @@
 InsalesApp::Application.routes.draw do
-  root to: 'main#index'
+  resources :variants
+  resources :products do
+    collection do
+  		get :downloadproduct
+  		get :updateproduct
+    end
+  end
 
   resource  :session do
     collection do
@@ -12,6 +18,6 @@ InsalesApp::Application.routes.draw do
   get '/login',     to: 'sessions#new',          as: :login
   get '/main',      to: 'main#index',            as: :main
 
-  get ':controller/:action/:id'
-  get ':controller/:action/:id.:format'
+  root to: 'main#index'
+
 end
