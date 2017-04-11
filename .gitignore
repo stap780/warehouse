@@ -9,7 +9,7 @@
 /.project
 /test/*
 /config/database.yml
-/config/initializers/insales_api.rb
+#/config/initializers/insales_api.rb
 /db/schema.rb
 # Ignore the default SQLite database.
 /db/*.sqlite3
